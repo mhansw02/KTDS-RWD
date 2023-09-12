@@ -11,6 +11,7 @@
     border: 0;
 }
 
+
 /* 숨김 콘텐츠 */
 .sr-only{
     position: absolute;
@@ -25,6 +26,14 @@
 }
 
 
+
+/* 컨테이너 */
+.container{
+    min-width: 16.25rem;
+}
+
+
+
 /* 헤더 */
 .appHeader{
     background-color: var(--primary-color);
@@ -36,8 +45,6 @@
 
 
 
-
-
 /* 로고 */
 .logo{
     width: 100%;
@@ -46,12 +53,13 @@
 .logo__link{
     display: block;
     /* background-color: blue; */
-    width: 12.75rem;
+    width: 13.1rem;
     height: 3.75rem;
     background-image: url(../images/webcafe-logo@2x.png);
     background-size: cover;
     
 }
+
 
 /* 멤버서비스 */
 .memberOnly{
@@ -61,8 +69,28 @@
     order: -1;
 }
 
+
+
 /* 검색폼 */
 .searchForm{
     width: 100%;
 }
+.searchForm__group{
+    display: flex;
+    gap: var(--spacing-sm);
+}
+.formInput{
+    background-color: aqua;
+    flex-grow: 1;
+    /* &__input{
+        width: 100%;
+    } */
+}
 
+.formInput__input{
+    width: 100%;
+}
+
+.searchForm .button{
+    white-space: nowrap;
+}
