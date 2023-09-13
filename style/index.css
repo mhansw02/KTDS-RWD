@@ -144,6 +144,7 @@ body {
 
 
 
+
 /* 모바일 디바이스 */
 @media (min-width: 320px) and (max-width: 767px) {
     /* 모바일 헤더 */
@@ -236,7 +237,7 @@ body {
     transform: translateX(-150%);
     transition: all 200ms;
   }
-  
+
   .is--active.menu__list{
     transform: translateX(0);
   }
@@ -308,4 +309,46 @@ body {
       text-shadow: 0px 0px 0 var(--black), -1px 1px 0 var(--black);
       
     }
+
+    /* 데스크탑 메인 컨텐츠 */
+    .appMain{
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      grid-gap: var(--spacing-lg)
+    }
+    
+    .book{
+      background-color: yellow;
+      grid-row:2/4;
+      grid-column: 1 / span 5;
+    }
+    .news{
+      background-color: pink;
+      grid-row: 1 / 2;
+      grid-column: 1/13;
+    }
+    
+    
+    .board{
+      background-color: skyblue;
+      grid-row: 3/4;
+      grid-column: 6/13;
+    }
+    
+    .twitter{
+      background-color: lime;
+      grid-row: 2/3;
+      grid-column: 6/10;
+    }
+
+    .favorite{
+      background-color: salmon;
+      grid-row:2/3;
+      grid-column: 10/13;
+    }
+    
+    
+
+
+
   }
