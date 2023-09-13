@@ -254,7 +254,39 @@ iframe {
 }
 
 
+/* 공통 게시판 */
+.board {
+  position: relative;
+}
 
+.board__list {
+  padding-left: 0;
+}
+
+.board__item {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: var(--spacing-xs);
+}
+
+.board__link {
+  width: calc(100% - 6rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__date {
+  flex-grow: 1;
+  text-align: right;
+  /* width: 5.3125rem; */
+  flex-shrink: 0;
+}
+.board__more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
 
 
