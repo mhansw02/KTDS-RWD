@@ -215,6 +215,32 @@ fieldset {
   height: 100%;
 }
 
+/* 공통 트위터 */
+.twitter__container{
+  background-color: yellow;
+  display: flow-root;
+}
+
+.twitter__userInfo{
+  display: inline-flex;
+  background-color: aqua;
+}
+
+.twitter__userProfile{
+  width: 20%;
+  float: right;
+  shape-outside: circle(50%);
+}
+
+.twitter__userProfileImage{
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: 30% 40%;
+}
+
+
+
 
 /* 모바일 디바이스 */
 @media (min-width: 320px) and (max-width: 767px) {
@@ -377,7 +403,7 @@ fieldset {
     grid-gap: var(--spacing-lg);
     grid-template-areas: 
     "news news news news news news news news news news news news"
-    "book book book book . favorite favorite favorite twitter twitter twitter twitter "
+    "book book book book . twitter twitter twitter twitter favorite favorite favorite "
     "book book book book . board board board board board board board";
   }
 
