@@ -224,9 +224,23 @@ body {
         transform: translateY(-50%) rotate(-45deg);
     }
 
-    .formInput__input{
-      border: 1px solid var(--border-color);
-    }
+    /* 모바일 메인 메뉴 */
+  .menu__list{
+    background: var(--yellow-opacity);
+    width: 70vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+    transform: translateX(-150%);
+    transition: all 200ms;
+  }
+  
+  .is--active.menu__list{
+    transform: translateX(0);
+  }
+
   }
 
 
