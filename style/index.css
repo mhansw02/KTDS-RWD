@@ -318,7 +318,30 @@ iframe {
 
 
 
+/* 공통 트위터 */
+.twitter__userInfo {
+  display: inline-flex;
+}
 
+.twitter__userProfile {
+  float: right;
+  shape-outside: circle(50%);
+  shape-margin: 1em;
+  width: clamp(60px, 20%, 80px);
+  aspect-ratio: 1/1;
+}
+
+.twitter__userProfileImage {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 100%;
+}
+
+.twitter__summary {
+  margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
+}
 
 
 
